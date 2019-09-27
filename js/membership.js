@@ -1,4 +1,3 @@
-
 function idText(){
     const inputId = document.getElementById("memberId");
     const text = document.getElementById("textId");
@@ -83,11 +82,21 @@ function checkValue(){
         alert("가입을 축하드립니다.");
         opener.location.href = 'mibs.html';
         window.close()
-    } else if(!inputId && !inputPass && !inputRePass && !inputName && !inputEmail) {
+    } else if(!inputId && !inputPass && !inputName && !inputRePass && !inputEmail){
         text.innerHTML = alertText;
         textPass.innerHTML = alertText;
         textRe.innerHTML = alertText;
-        textEmail.innerHTML = alertText;
         textName.innerHTML = alertText;
+        textEmail.innerHTML = alertText;
+    } else if(!inputId) {
+        text.innerHTML = alertText;
+    } else if(!inputPass) {
+        textPass.innerHTML = alertText;
+    } else if(!inputRePass){
+        textRe.innerHTML = alertText;
+    } else if(!inputName) {
+        textName.innerHTML = alertText;
+    } else if(!inputEmail) {
+        textEmail.innerHTML = alertText;
     } 
 }
