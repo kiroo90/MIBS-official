@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../sectioncss.css">
+    <title>MIBS</title>
+</head>
+<body>
+<form id = "logoutContainer" name="logoutForm">
+    <div id = logoutInput>
+    <button class="logoutButton none" type="button" onclick="logout()">로그아웃</button>
+    <div class = "loginText none"></div>
+    </div>
+</form>
+<form id ="loginContainer" name=loginForm>
+        <div id="loginInput">
+        <input id="id" class="inputCss" type="text" placeholder="아이디">
+        <input id="password" class="inputCss"type="password" placeholder="비밀번호">
+        <button class="buttonCss" type=button onclick="login()">로그인</button>
+        <button class="buttonCss" type=button onclick="bottomPopup()">회원가입</button>
+        </div>
+</form>
+<div class='main'>
+    <img class=logo src="../img/main1.jpg" onclick='javaScript:location.href="../mibs.html";'>
+    <div id=linkLogo>
+        <div>
+            <ul class="linkLogoUl">
+                <li class="linkLogoLi">
+                    <img class="linkLogoImg" src="../logo/soundcloud.png" 
+                        alt="soundcloud"
+                        onclick='javaScript:window.open("https://soundcloud.com/kiroo")'
+                    >
+                </li>
+                <li class="linkLogoLi">
+                        <img class="linkLogoImg" src="../logo/navermusic2.jpg" 
+                        alt="musicianLeague" 
+                        onclick='javaScript:window.open("https://music.naver.com/ML/MIBS")'
+                    >
+                </li>
+                <li class="linkLogoLi">
+                        <img class="linkLogoImg" src="../logo/instargrem.png" 
+                        alt="instargrem"
+                        onclick='javaScript:window.open("https://www.instagram.com/mibs_kiroo/")'
+                    >
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id=nav>
+        <ul id=navUl>
+            <li class="navLi">
+                <a class='hover' href='../vol1/vol1main.html'>MIBStype Vol.1</a>
+                <ul class=sub>
+                    <li class="liborder"></li>
+                    <li class='dropLi'><a class='subHover' href='../vol1/vol1main.html'>삶 part.2</a></li>
+                    <li class='dropLi'><a class='subHover' href='../vol1/vol1main.html'>Turn it around</a></li>
+                    <li class='dropLi'><a class='subHover' href='../vol1/vol1main.html'>Missing You</a></li>
+                    <li class='dropLi'><a class='subHover' href='../vol1/vol1main.html'>Something Good</a></li>
+                    <li class='dropLi'><a class='subHover' href='../vol1/vol1main.html'>늘어난 밴드, 구멍난 팬티</a></li>
+                    <li class='dropLi'><a class='subHover' href='../vol1/vol1main.html'>가자</a></li>
+                    <li class='dropLi'><a class='subHover' href='../vol1/vol1main.html'>Wake up</a></li>
+                    <li class='dropLi'><a class='subHover lastA' href='../vol1/vol1main.html'>안생겨요</a></li>
+                </ul>
+            </li>
+            <li class="navLi"><a class='hover' href='../vol2/vol2main.html'>MIBStype Vol.2</a>
+                <ul class=sub>
+                        <li class="liborder"></li>
+                        <li class='dropLi'><a class='subHover' href="../vol2/track2_1.html">16Bar</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol2/track2_2.html">Feel Good</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol2/track2_3.html">4.5춘기</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol2/track2_4.html">봄날</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol2/track2_5.html">Never Land</a></li>
+                        <li class='dropLi'><a class='subHover lastA' href="../vol2/track2_6.html">자각몽</a></li>
+                </ul>
+            </li>
+            <li class="navLi"><a class='hover' href='../vol3/vol3main.html'>MIBStype Vol.3</a>
+                <ul class=sub>
+                        <li class="liborder"></li>
+                        <li class='dropLi'><a class='subHover' href="../vol3/track3_1.html">새벽밤</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol3/track3_2.html">A girl</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol3/track3_3.html">달볓따라</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol3/track3_4.html">dope song</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol3/track3_5.html">꼴값</a></li>
+                        <li class='dropLi'><a class='subHover lastA' href="../vol3/track3_6.html">Neon</a></li>
+                </ul>
+            </li>
+            <li class="navLi"><a class='hover' href='../vol4/vol4main.html'>MIBStype Vol.4</a>
+                <ul class=sub>
+                        <li class="liborder"></li>
+                        <li class='dropLi'><a class='subHover' href="../vol4/track4_1.html">걷다</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol4/track4_2.html">A'sob</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol4/track4_3.html">Back in Time</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol4/track4_4.html">051</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol4/track4_5.html">Ideal</a></li>
+                        <li class='dropLi'><a class='subHover lastA' href="../vol4/track4_6.html">Wanne be</a></li>
+                </ul>
+            </li>
+            <li class="navLi"><a class='hover' href='../vol5/vol5main.html'>MIBStype Vol.5</a>
+                <ul class=sub>
+                        <li class="liborder"></li>
+                        <li class='dropLi'><a class='subHover' href="../vol5/track5_1.html">Lonely Night</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol5/track5_2.html">밤을 노래해</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol5/track5_3.html">Muse</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol5/track5_4.html">My Way</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol5/track5_5.html">새 텍스트 문서</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol5/track5_6.html">이 밤이 지나고나면</a></li>
+                        <li class='dropLi'><a class='subHover lastA' href="../vol5/track5_7.html">어땠어</a></li>
+                </ul>
+            </li>
+            <li class="navLi"><a class='hover' href='../vol6/vol6main.html'>MIBStype Vol.6</a>
+                <ul class=sub>
+                        <li class="liborder"></li>
+                        <li class='dropLi'><a class='subHover' href="../vol6/track6_1.html">그냥</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol6/track6_2.html">051 Type</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol6/track6_3.html">Pass</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol6/track6_4.html">Shame on you</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol6/track6_5.html">높아</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol6/track6_6.html">관계</a></li>
+                        <li class='dropLi'><a class='subHover lastA' href="../vol6/track6_7.html">잠잠잠</a></li>
+                </ul>
+            </li>
+            <li class="navLi"><a class='hover' href='../jay1/jay1.html'>Jay Vol.1</a>
+                <ul class=sub>
+                        <li class="liborder"></li>
+                        <li class='dropLi'><a class='subHover' href="../jay1/track1_1.html">Curtain Call</a></li>
+                        <li class='dropLi'><a class='subHover' href="../jay1/track1_2.html">전화받아</a></li>
+                        <li class='dropLi'><a class='subHover' href="../jay1/track1_3.html">Right there</a></li>
+                        <li class='dropLi'><a class='subHover' href="../jay1/track1_4.html">한 걸음더</a></li>
+                        <li class='dropLi'><a class='subHover' href="../jay1/track1_5.html">She is</a></li>
+                        <li class='dropLi'><a class='subHover lastA' href="../jay1/track1_6.html">Call me</a></li>
+                </ul>
+            </li>
+            <li class="navLi"><a class='hover' href='jay2.html'>Jay Vol.2</a>
+                <ul class=sub>
+                        <li class="liborder"></li>
+                        <li class='dropLi'><a class='subHover' href="track1_1.html">Bird</a></li>
+                        <li class='dropLi'><a class='subHover' href="track1_2.html">전부</a></li>
+                        <li class='dropLi'><a class='subHover' href="track1_3.html">Paradise</a></li>
+                        <li class='dropLi'><a class='subHover' href="track1_4.html">MANIA</a></li>
+                        <li class='dropLi'><a class='subHover' href="track1_5.html">Think</a></li>
+                        <li class='dropLi'><a class='subHover' href="track1_6.html">Wonderland</a></li>
+                        <li class='dropLi'><a class='subHover lastA' href="track1_7.html">변해가네 Remix</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id=sectionContainer>
+        <div id=display>
+            <div id=sectionNav>
+                    <ul class=sectionUl>
+                            <li class='sectionLi'><a class='sectionA' href="track1_1.html">Bird</a></li>
+                            <li class='sectionLi'><a class='sectionA' href="track1_2.html">전부</a></li>
+                            <li class='sectionLi'><a class='sectionA' href="track1_3.html">Paradise</a></li>
+                            <li class='sectionLi'><a class='sectionA' href="track1_4.html">MANIA</a></li>
+                            <li class='sectionLi'><a class='sectionA' href="track1_5.html">Think</a></li>
+                            <li class='sectionLi'><a class='sectionA' href="track1_6.html">Wonderland</a></li>
+                            <li class='sectionLi'><a class='sectionA' href="track1_7.html">변해가네 Remix</a></li>
+                    </ul>
+            </div>
+            <div id=sectionMain>
+                <div id=track>
+                    <iframe width="80%" height="166" scrolling="no" 
+                    frameborder="no" allow="autoplay" 
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/322738321&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+                    </iframe>
+                </div>
+                <div id = comment>
+                    <div id = commentOut>
+                        <div id = title>Kiroo_Comment</div>
+                        <button class="arrowTop" type="button" onclick="outComment()"></button>
+                        <button class="arrowBottom" type="button" onclick="inComment()"></button>
+                    </div>
+                    <div id = commentText>
+                        '오늘 문득 바람을 맞으며 널 생각했어'
+                        <br>
+                        Jay식 예쁜 가사에 예쁜 사랑 노래
+                        <br>
+                        비트와 잘어울리는 귀여운 가사가 인상적
+                        <br>
+                        개인적으로도 이런 비트를 참 좋아한다.
+                    </div>
+                </div>
+                    <div id=verse>
+                        <h3>Think</h3>
+                        <br>
+                        hook)
+                        <br>
+                        오늘 문득 바람을 맞으며 널 생각했어
+                        <br>
+                        저편에 펼쳐 너를 닮은 걸
+                        <br>
+                        아무리 그려봤지만 저 풍경은 여전해
+                        <br>
+                        널 생각 하는것만으로도 난 행복해
+                        <br><br>
+                        verse 1)
+                        <br>
+                        웃고있어 넌 건너편에서 부터
+                        <br>
+                        날 웃음짓게 만들어 또 
+                        <br>
+                        걸음걸이, 총총 토끼같이 흰피부 넌 때론
+                        <br>
+                        고양이처럼 도도해 난 집사 
+                        <br>
+                        넌 내가 필요하지 않은것 같아
+                        <br>
+                        그럴때마다 드는 자괴감
+                        <br>
+                        너를 보자마자 난 너를 안고서
+                        <br><br>
+                        hook)
+                        <br>
+                        오늘 문득 바람을 맞으며 널 생각했어
+                        <br>
+                        저편에 펼쳐 너를 닮은 걸
+                        <br>
+                        아무리 그려봤지만 저 풍경은 여전해
+                        <br>
+                        널 생각하는것만으로도 난 행복해
+                        <br><br>
+                        verse 2)
+                        <br>
+                        난 가끔 멍하게 있어 널
+                        <br>
+                        보고 있음 난 굳고 uh
+                        <br>
+                        떻게든 웃기고 싶어 웃는게 예쁘니까 난 널
+                        <br>
+                        웃게하고 싶어
+                        <br>
+                        김치 치즈 볶음밥을 잘먹고
+                        <br>
+                        사람들 눈칠안봐 내게 안겨서
+                        <br>
+                        가끔은 날 당황하게 만들어서
+                        <br>
+                        너를 보자마자 난 너를 안고서
+                        <br><br>
+                        hook)
+                        <br>
+                        오늘 문득 바람을 맞으며 널 생각했어
+                        <br>
+                        저편에 펼쳐 너를 닮은 걸
+                        <br>
+                        아무리 그려봤지만 저 풍경은 여전해
+                        <br>
+                        널 생각하는것만으로도 난 행복해
+                     </div>
+                </div>
+            </div>
+        </div>
+    <div id="footer">
+        <img id="footerImg" src="../img/footer.jpg" alt="IMG" 
+        onclick='javaScript:location.href="../mibs.html";'>
+        <h6 id="footerText">Copyright ⓒ MIBSound. All rights reserved.</h3>
+    </div>
+</div>
+<script src="../js/login.js"></script>
+<script src="../js/comment.js"></script>
+</body>
+</html>

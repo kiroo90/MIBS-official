@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../sectioncss.css">
+    <title>MIBS</title>
+</head>
+<body>
+<form id = "logoutContainer" name="logoutForm">
+    <div id = logoutInput>
+    <button class="logoutButton none" type="button" onclick="logout()">로그아웃</button>
+    <div class = "loginText none"></div>
+    </div>
+</form>
+<form id ="loginContainer" name=loginForm>
+        <div id="loginInput">
+        <input id="id" class="inputCss" type="text" placeholder="아이디">
+        <input id="password" class="inputCss"type="password" placeholder="비밀번호">
+        <button class="buttonCss" type=button onclick="login()">로그인</button>
+        <button class="buttonCss" type=button onclick="bottomPopup()">회원가입</button>
+        </div>
+</form>
+<div class='main'>
+    <img class=logo src="../img/main1.jpg" onclick='javaScript:location.href="../mibs.html";'>
+    <div id=linkLogo>
+        <div>
+            <ul class="linkLogoUl">
+                <li class="linkLogoLi">
+                    <img class="linkLogoImg" src="../logo/soundcloud.png" 
+                        alt="soundcloud"
+                        onclick='javaScript:window.open("https://soundcloud.com/kiroo")'
+                    >
+                </li>
+                <li class="linkLogoLi">
+                        <img class="linkLogoImg" src="../logo/navermusic2.jpg" 
+                        alt="musicianLeague" 
+                        onclick='javaScript:window.open("https://music.naver.com/ML/MIBS")'
+                    >
+                </li>
+                <li class="linkLogoLi">
+                        <img class="linkLogoImg" src="../logo/instargrem.png" 
+                        alt="instargrem"
+                        onclick='javaScript:window.open("https://www.instagram.com/mibs_kiroo/")'
+                    >
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id=nav>
+        <ul id=navUl>
+            <li class="navLi">
+                <a class='hover' href='../vol1/vol1main.html'>MIBStype Vol.1</a>
+                <ul class=sub>
+                    <li class="liborder"></li>
+                    <li class='dropLi'><a class='subHover' href='../vol1/vol1main.html'>삶 part.2</a></li>
+                    <li class='dropLi'><a class='subHover' href='../vol1/vol1main.html'>Turn it around</a></li>
+                    <li class='dropLi'><a class='subHover' href='../vol1/vol1main.html'>Missing You</a></li>
+                    <li class='dropLi'><a class='subHover' href='../vol1/vol1main.html'>Something Good</a></li>
+                    <li class='dropLi'><a class='subHover' href='../vol1/vol1main.html'>늘어난 밴드, 구멍난 팬티</a></li>
+                    <li class='dropLi'><a class='subHover' href='../vol1/vol1main.html'>가자</a></li>
+                    <li class='dropLi'><a class='subHover' href='../vol1/vol1main.html'>Wake up</a></li>
+                    <li class='dropLi'><a class='subHover lastA' href='../vol1/vol1main.html'>안생겨요</a></li>
+                </ul>
+            </li>
+            <li class="navLi"><a class='hover' href='../vol2/vol2main.html'>MIBStype Vol.2</a>
+                <ul class=sub>
+                        <li class="liborder"></li>
+                        <li class='dropLi'><a class='subHover' href="../vol2/track2_1.html">16Bar</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol2/track2_2.html">Feel Good</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol2/track2_3.html">4.5춘기</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol2/track2_4.html">봄날</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol2/track2_5.html">Never Land</a></li>
+                        <li class='dropLi'><a class='subHover lastA' href="../vol2/track2_6.html">자각몽</a></li>
+                </ul>
+            </li>
+            <li class="navLi"><a class='hover' href='../vol3/vol3main.html'>MIBStype Vol.3</a>
+                <ul class=sub>
+                        <li class="liborder"></li>
+                        <li class='dropLi'><a class='subHover' href="../vol3/track3_1.html">새벽밤</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol3/track3_2.html">A girl</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol3/track3_3.html">달볓따라</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol3/track3_4.html">dope song</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol3/track3_5.html">꼴값</a></li>
+                        <li class='dropLi'><a class='subHover lastA' href="../vol3/track3_6.html">Neon</a></li>
+                </ul>
+            </li>
+            <li class="navLi"><a class='hover' href='vol4main.html'>MIBStype Vol.4</a>
+                <ul class=sub>
+                        <li class="liborder"></li>
+                        <li class='dropLi'><a class='subHover' href="track4_1.html">걷다</a></li>
+                        <li class='dropLi'><a class='subHover' href="track4_2.html">A'sob</a></li>
+                        <li class='dropLi'><a class='subHover' href="track4_3.html">Back in Time</a></li>
+                        <li class='dropLi'><a class='subHover' href="track4_4.html">051</a></li>
+                        <li class='dropLi'><a class='subHover' href="track4_5.html">Ideal</a></li>
+                        <li class='dropLi'><a class='subHover lastA' href="track4_6.html">Wanne be</a></li>
+                </ul>
+            </li>
+            <li class="navLi"><a class='hover' href='../vol5/vol5main.html'>MIBStype Vol.5</a>
+                <ul class=sub>
+                        <li class="liborder"></li>
+                        <li class='dropLi'><a class='subHover' href="../vol5/track5_1.html">Lonely Night</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol5/track5_2.html">밤을 노래해</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol5/track5_3.html">Muse</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol5/track5_4.html">My Way</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol5/track5_5.html">새 텍스트 문서</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol5/track5_6.html">이 밤이 지나고나면</a></li>
+                        <li class='dropLi'><a class='subHover lastA' href="../vol5/track5_7.html">어땠어</a></li>
+                </ul>
+            </li>
+            <li class="navLi"><a class='hover' href='../vol6/vol6main.html'>MIBStype Vol.6</a>
+                <ul class=sub>
+                        <li class="liborder"></li>
+                        <li class='dropLi'><a class='subHover' href="../vol6/track6_1.html">그냥</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol6/track6_2.html">051 Type</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol6/track6_3.html">Pass</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol6/track6_4.html">Shame on you</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol6/track6_5.html">높아</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol6/track6_6.html">관계</a></li>
+                        <li class='dropLi'><a class='subHover lastA' href="../vol6/track6_7.html">잠잠잠</a></li>
+                </ul>
+            </li>
+            <li class="navLi"><a class='hover' href='../jay1/jay1.html'>Jay Vol.1</a>
+                <ul class=sub>
+                        <li class="liborder"></li>
+                        <li class='dropLi'><a class='subHover' href="../jay1/track1_1.html">Curtain Call</a></li>
+                        <li class='dropLi'><a class='subHover' href="../jay1/track1_2.html">전화받아</a></li>
+                        <li class='dropLi'><a class='subHover' href="../jay1/track1_3.html">Right there</a></li>
+                        <li class='dropLi'><a class='subHover' href="../jay1/track1_4.html">한 걸음더</a></li>
+                        <li class='dropLi'><a class='subHover' href="../jay1/track1_5.html">She is</a></li>
+                        <li class='dropLi'><a class='subHover lastA' href="../jay1/track1_6.html">Call me</a></li>
+                </ul>
+            </li>
+            <li class="navLi"><a class='hover' href='../jay2/jay2.html'>Jay Vol.2</a>
+                <ul class=sub>
+                        <li class="liborder"></li>
+                        <li class='dropLi'><a class='subHover' href="../jay2/track1_1.html">Bird</a></li>
+                        <li class='dropLi'><a class='subHover' href="../jay2/track1_2.html">전부</a></li>
+                        <li class='dropLi'><a class='subHover' href="../jay2/track1_3.html">Paradise</a></li>
+                        <li class='dropLi'><a class='subHover' href="../jay2/track1_4.html">MANIA</a></li>
+                        <li class='dropLi'><a class='subHover' href="../jay2/track1_5.html">Think</a></li>
+                        <li class='dropLi'><a class='subHover' href="../jay2/track1_6.html">Wonderland</a></li>
+                        <li class='dropLi'><a class='subHover lastA' href="../jay2/track1_7.html">변해가네 Remix</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id=sectionContainer>
+        <div id=display>
+            <div id=sectionNav>
+                    <ul class=sectionUl>
+                            <li class='sectionLi'><a class='sectionA' href="track4_1.html">걷다</a></li>
+                            <li class='sectionLi'><a class='sectionA' href="track4_2.html">A'sob</a></li>
+                            <li class='sectionLi'><a class='sectionA' href="track4_3.html">Back in Time</a></li>
+                            <li class='sectionLi'><a class='sectionA' href="track4_4.html">051</a></li>
+                            <li class='sectionLi'><a class='sectionA' href="track4_5.html">Ideal</a></li>
+                            <li class='sectionLi'><a class='sectionA' href='track4_6.html'>Wanne be</a></li>
+                    </ul>
+            </div>
+            <div id=sectionMain>
+                <div id=track>
+                    <iframe width="80%" height="166" scrolling="no" 
+                    frameborder="no" allow="autoplay" 
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/199342781&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+                    </iframe>
+                </div>
+                <div id = comment>
+                    <div id = commentOut>
+                        <div id = title>Jay_Comment</div>
+                        <button class="arrowTop" type="button" onclick="outComment()"></button>
+                        <button class="arrowBottom" type="button" onclick="inComment()"></button>
+                    </div>
+                    <div id = commentText>
+                        '호미초이 호미초이 하는데에는 이유가 있다'
+                        <br>
+                        딱히 말할게 없다 너무 좋아서
+                    </div>
+                </div>
+                    <div id=verse>
+                        <h3>051</h3>
+                        <br>
+                        1)Kiroo
+                        <br>
+                        내가 나고 자란 동네
+                        <br>
+                        살기좋은곳 부산 아직도 설레
+                        <br>
+                        너넨 다 해운대 광안리 뭐다 배운게 
+                        <br>
+                        그런것들 뿐이니까 늘 제대로 못노네
+                        <br><br>
+                        기장에서 동래 연산동 함 가볼래?
+                        <br>
+                        야구는 사직이지 가을까지 가자 롯데
+                        <br>
+                        겨울의 바다를 왜 생각지를 못해 
+                        <br>
+                        초량과 가야 개금 뻔한건 말안할께
+                        <br><br>
+                        금정구에 있어 난
+                        <br>
+                        장전동 222-4번지 ma hometown 
+                        <br>
+                        온천천을 걷지 내 공간
+                        <br>
+                        난 여기서 나고 자랐지 여긴 부산바닥
+                        <br><br>
+                        앞으로도 내가 쭉 살아갈곳
+                        <br>
+                        난 02전환 안받아 불안해 스펨같아
+                        <br>
+                        어디든 색색깔의 빛
+                        <br>
+                        여기가 바로 부산 일로와 기대치는 높혀
+                        <br><br>
+                        hook)Homie Choi
+                        <br>
+                        I'm in busan now
+                        <br>
+                        해운대 광안리가 다가 아냐
+                        <br>
+                        051
+                        <br>
+                        I'm in busan now
+                        <br>
+                        남포동 서면 그게 다가 아냐
+                        <br>
+                        051
+                        <br><br>
+                        2)Homie Choi
+                        <br>
+                        I go by the name of 토박이
+                        <br>
+                        해운대 달맞이 출신
+                        <br>
+                        진구 당감동 북구 화명동 
+                        <br>
+                        동래구 온천3동에다가 남구 대연3동 
+                        <br><br>
+                        군대까지 부산에서 복무 
+                        <br>
+                        쩔래? 해운대 광안리가 no 다가 절대아냐
+                        <br>
+                        부산 3대통닭 뜯고 나와 식후경
+                        <br>
+                        황령산에서 야경한번 내려봐
+                        <br><br>
+                        강따위가 보일리 없어 
+                        <br>
+                        내게 in서울은 단어조차 무의미
+                        <br>
+                        부산이 촌이면 한국은 서울섬
+                        <br>
+                        개촌넘들아 여기는 southside 
+                        <br><br>
+                        알로하 follow my 
+                        <br>
+                        무궁화 ktx 환영 난 부러움 따윈 없다 
+                        <br>
+                        나 농담 따먹기 하는게 아냐 
+                        <br>
+                        그래 그게 다가 아냐 
+                        <br>
+                        now let me introduce my hometown~~
+                        <br><br>
+                        hook)Homie Choi
+                        <br>
+                        I'm in busan now
+                        <br>
+                        해운대 광안리가 다가 아냐
+                        <br>
+                        051
+                        <br>
+                        I'm in busan now
+                        <br>
+                        남포동 서면 그게 다가 아냐
+                        <br>
+                        051
+                     </div>
+                </div>
+            </div>
+        </div>
+    <div id="footer">
+        <img id="footerImg" src="../img/footer.jpg" alt="IMG" 
+        onclick='javaScript:location.href="../mibs.html";'>
+        <h6 id="footerText">Copyright ⓒ MIBSound. All rights reserved.</h3>
+    </div>
+</div>
+<script src="../js/login.js"></script>
+<script src="../js/comment.js"></script>
+</body>
+</html>

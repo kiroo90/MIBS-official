@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="membership.css">
+    <title>회원가입</title>
+</head>
+<body>
+    <div class='main'>
+        <img class=logo src="img/main1.jpg" onclick='javaScript:location.href="mibs.html";'>
+    </div>
+    <form id="input" name="memberShip">
+        <h4>아이디</h4>
+        <span id="textId"></span> 
+        <input id="memberId" class="membershipInput" 
+        type="text" placeholder="아이디" maxlength="20" onchange="idText()">
+    <span>
+        <h4>비밀번호<div id="passAlert">(유사 로그인입니다 간단한 비밀번호를 지정하세요.)</div></h4>
+        <span id="textPass"></span> 
+        <input id="memberPass" class="membershipInput" 
+            type="password" placeholder="비밀번호" 
+            maxlength="20" onchange="passText()">
+    </span>
+    <span>
+        <h4>비밀번호 재확인</h4> 
+        <span id="rePass"></span> 
+        <input id="memberPass2" class="membershipInput" 
+            type="password" placeholder="비밀번호 재확인" 
+            maxlength="20" onchange="retrunPass()">
+    </span>
+    <span>
+        <h4>이름</h4> 
+        <span id="textName"></span> 
+        <input id="memberName" class="membershipInput" 
+            type="name" placeholder="이름">
+    </span>
+    <span>
+        <h4>이메일</h4> 
+        <span id="textEmail"></span> 
+        <input id="memberEmail" class="membershipInput" 
+            type="email" placeholder="이메일"  onchange="emailText()">
+    </span>
+    <span id='buttonSpan'>
+        <button class="membershipBut but" type=button onclick="checkValue();">회원 가입</button>
+        <button class="membershipBut" type=button onclick="window.close()">취소</button>
+    </span>
+    </form>  
+
+    <div id="footer">
+            <img id="footerImg" src="img/footer.jpg" alt="IMG" 
+            onclick='javaScript:location.href="mibs.html";'>
+            <h6 id="footerText">Copyright ⓒ MIBSound. All rights reserved.</h3>
+    </div>
+</body>
+<script src="js/membership.js"></script>
+<script src="js/login.js"></script>
+</html>

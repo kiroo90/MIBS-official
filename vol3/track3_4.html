@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../sectioncss.css">
+    <title>MIBS</title>
+</head>
+<body>
+<form id = "logoutContainer" name="logoutForm">
+    <div id = logoutInput>
+    <button class="logoutButton none" type="button" onclick="logout()">로그아웃</button>
+    <div class = "loginText none"></div>
+    </div>
+</form>
+<form id ="loginContainer" name=loginForm>
+        <div id="loginInput">
+        <input id="id" class="inputCss" type="text" placeholder="아이디">
+        <input id="password" class="inputCss"type="password" placeholder="비밀번호">
+        <button class="buttonCss" type=button onclick="login()">로그인</button>
+        <button class="buttonCss" type=button onclick="bottomPopup()">회원가입</button>
+        </div>
+</form>
+<div class='main'>
+    <img class=logo src="../img/main1.jpg" onclick='javaScript:location.href="../mibs.html";'>
+    <div id=linkLogo>
+        <div>
+            <ul class="linkLogoUl">
+                <li class="linkLogoLi">
+                    <img class="linkLogoImg" src="../logo/soundcloud.png" 
+                        alt="soundcloud"
+                        onclick='javaScript:window.open("https://soundcloud.com/kiroo")'
+                    >
+                </li>
+                <li class="linkLogoLi">
+                        <img class="linkLogoImg" src="../logo/navermusic2.jpg" 
+                        alt="musicianLeague" 
+                        onclick='javaScript:window.open("https://music.naver.com/ML/MIBS")'
+                    >
+                </li>
+                <li class="linkLogoLi">
+                        <img class="linkLogoImg" src="../logo/instargrem.png" 
+                        alt="instargrem"
+                        onclick='javaScript:window.open("https://www.instagram.com/mibs_kiroo/")'
+                    >
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id=nav>
+        <ul id=navUl>
+            <li class="navLi">
+                <a class='hover' href='../vol1/vol1main.html'>MIBStype Vol.1</a>
+                <ul class=sub>
+                    <li class="liborder"></li>
+                    <li class='dropLi'><a class='subHover' href='../vol1/vol1main.html'>삶 part.2</a></li>
+                    <li class='dropLi'><a class='subHover' href='../vol1/vol1main.html'>Turn it around</a></li>
+                    <li class='dropLi'><a class='subHover' href='../vol1/vol1main.html'>Missing You</a></li>
+                    <li class='dropLi'><a class='subHover' href='../vol1/vol1main.html'>Something Good</a></li>
+                    <li class='dropLi'><a class='subHover' href='../vol1/vol1main.html'>늘어난 밴드, 구멍난 팬티</a></li>
+                    <li class='dropLi'><a class='subHover' href='../vol1/vol1main.html'>가자</a></li>
+                    <li class='dropLi'><a class='subHover' href='../vol1/vol1main.html'>Wake up</a></li>
+                    <li class='dropLi'><a class='subHover lastA' href='../vol1/vol1main.html'>안생겨요</a></li>
+                </ul>
+            </li>
+            <li class="navLi"><a class='hover' href='../vol2/vol2main.html'>MIBStype Vol.2</a>
+                <ul class=sub>
+                        <li class="liborder"></li>
+                        <li class='dropLi'><a class='subHover' href="../vol2/track2_1.html">16Bar</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol2/track2_2.html">Feel Good</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol2/track2_3.html">4.5춘기</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol2/track2_4.html">봄날</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol2/track2_5.html">Never Land</a></li>
+                        <li class='dropLi'><a class='subHover lastA' href="../vol2/track2_6.html">자각몽</a></li>
+                </ul>
+            </li>
+            <li class="navLi"><a class='hover' href='vol3main.html'>MIBStype Vol.3</a>
+                <ul class=sub>
+                        <li class="liborder"></li>
+                        <li class='dropLi'><a class='subHover' href="track3_1.html">새벽밤</a></li>
+                        <li class='dropLi'><a class='subHover' href="track3_2.html">A girl</a></li>
+                        <li class='dropLi'><a class='subHover' href="track3_3.html">달볓따라</a></li>
+                        <li class='dropLi'><a class='subHover' href="track3_4.html">dope song</a></li>
+                        <li class='dropLi'><a class='subHover' href="track3_5.html">꼴값</a></li>
+                        <li class='dropLi'><a class='subHover lastA' href="track3_6.html">Neon</a></li>
+                </ul>
+            </li>
+            <li class="navLi"><a class='hover' href='../vol4/vol4main.html'>MIBStype Vol.4</a>
+                <ul class=sub>
+                        <li class="liborder"></li>
+                        <li class='dropLi'><a class='subHover' href="../vol4/track4_1.html">걷다</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol4/track4_2.html">A'sob</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol4/track4_3.html">Back in Time</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol4/track4_4.html">051</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol4/track4_5.html">Ideal</a></li>
+                        <li class='dropLi'><a class='subHover lastA' href="../vol4/track4_6.html">Wanne be</a></li>
+                </ul>
+            </li>
+            <li class="navLi"><a class='hover' href='../vol5/vol5main.html'>MIBStype Vol.5</a>
+                <ul class=sub>
+                        <li class="liborder"></li>
+                        <li class='dropLi'><a class='subHover' href="../vol5/track5_1.html">Lonely Night</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol5/track5_2.html">밤을 노래해</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol5/track5_3.html">Muse</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol5/track5_4.html">My Way</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol5/track5_5.html">새 텍스트 문서</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol5/track5_6.html">이 밤이 지나고나면</a></li>
+                        <li class='dropLi'><a class='subHover lastA' href="../vol5/track5_7.html">어땠어</a></li>
+                </ul>
+            </li>
+            <li class="navLi"><a class='hover' href='../vol6/vol6main.html'>MIBStype Vol.6</a>
+                <ul class=sub>
+                        <li class="liborder"></li>
+                        <li class='dropLi'><a class='subHover' href="../vol6/track6_1.html">그냥</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol6/track6_2.html">051 Type</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol6/track6_3.html">Pass</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol6/track6_4.html">Shame on you</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol6/track6_5.html">높아</a></li>
+                        <li class='dropLi'><a class='subHover' href="../vol6/track6_6.html">관계</a></li>
+                        <li class='dropLi'><a class='subHover lastA' href="../vol6/track6_7.html">잠잠잠</a></li>
+                </ul>
+            </li>
+            <li class="navLi"><a class='hover' href='../jay1/jay1.html'>Jay Vol.1</a>
+                <ul class=sub>
+                        <li class="liborder"></li>
+                        <li class='dropLi'><a class='subHover' href="../jay1/track1_1.html">Curtain Call</a></li>
+                        <li class='dropLi'><a class='subHover' href="../jay1/track1_2.html">전화받아</a></li>
+                        <li class='dropLi'><a class='subHover' href="../jay1/track1_3.html">Right there</a></li>
+                        <li class='dropLi'><a class='subHover' href="../jay1/track1_4.html">한 걸음더</a></li>
+                        <li class='dropLi'><a class='subHover' href="../jay1/track1_5.html">She is</a></li>
+                        <li class='dropLi'><a class='subHover lastA' href="../jay1/track1_6.html">Call me</a></li>
+                </ul>
+            </li>
+            <li class="navLi"><a class='hover' href='../jay2/jay2.html'>Jay Vol.2</a>
+                <ul class=sub>
+                        <li class="liborder"></li>
+                        <li class='dropLi'><a class='subHover' href="../jay2/track1_1.html">Bird</a></li>
+                        <li class='dropLi'><a class='subHover' href="../jay2/track1_2.html">전부</a></li>
+                        <li class='dropLi'><a class='subHover' href="../jay2/track1_3.html">Paradise</a></li>
+                        <li class='dropLi'><a class='subHover' href="../jay2/track1_4.html">MANIA</a></li>
+                        <li class='dropLi'><a class='subHover' href="../jay2/track1_5.html">Think</a></li>
+                        <li class='dropLi'><a class='subHover' href="../jay2/track1_6.html">Wonderland</a></li>
+                        <li class='dropLi'><a class='subHover lastA' href="../jay2/track1_7.html">변해가네 Remix</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id=sectionContainer>
+        <div id=display>
+            <div id=sectionNav>
+                    <ul class=sectionUl>
+                            <li class='sectionLi'><a class='sectionA' href="track3_1.html">새벽밤</a></li>
+                            <li class='sectionLi'><a class='sectionA' href="track3_2.html">A girl</a></li>
+                            <li class='sectionLi'><a class='sectionA' href="track3_3.html">달볓따라</a></li>
+                            <li class='sectionLi'><a class='sectionA' href="track3_4.html">dope song</a></li>
+                            <li class='sectionLi'><a class='sectionA' href="track3_5.html">꼴값</a></li>
+                            <li class='sectionLi'><a class='sectionA' href='track3_6.html'>Neon</a></li>
+                    </ul>
+            </div>
+            <div id=sectionMain>
+                <div id=track>
+                    <iframe width="80%" height="166" scrolling="no" 
+                    frameborder="no" allow="autoplay" 
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/173892503&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+                    </iframe>
+                </div>
+                <div id = comment>
+                    <div id = commentOut>
+                        <div id = title>Jay_Comment</div>
+                        <button class="arrowTop" type="button" onclick="outComment()"></button>
+                        <button class="arrowBottom" type="button" onclick="inComment()"></button>
+                    </div>
+                    <div id = commentText>
+                        '시너지'
+                        <br>
+                        나 스스로의 음색이 나쁘지 않다고 처음 느꼈다.
+                        <br>
+                        여담이지만 이때 시너지가 굉장히 좋았던것같다.
+                        <br>
+                        셋이서 퍼드도 즐겨하면서 분위기로서의 시너지가 잘 작용해서 그런지
+                        <br>
+                        곡이 좋다. 더불어 키루의 톤은 이때부터 안정화가 시작되었다.
+                    </div>
+                </div>
+                    <div id=verse>
+                        <h3>dope song</h3>
+                        <br>
+                        hook)Jay
+                        <br>
+                        work it make it 탈출구는 오직 moving
+                        <br>
+                        circuit 우리는 hurry 느린듯, 하지만 faster
+                        <br>
+                        harder better 언제나 좋은음악 music
+                        <br>
+                        so sick, dope shit, fuck it in the end calling
+                        <br>
+                        <br>
+                        1)Lil_chumji aka 808사나이
+                        <br>
+                        Look who's at in the motherfucking air.
+                        <br>
+                        내 뇌는 fucking high as choppers can
+                        <br>
+                        for the westside. 이건 마약뮤직,
+                        <br>
+                        신성하지 후광.like when i die. 
+                        <br><br>
+                        popping. stopping. Hopping like a rabbit. 
+                        <br>
+                        우리 랩 한 모금이면 저 하늘을 헤메지. 
+                        <br>
+                        Im grinding. 잘봐 Im riding flow. 
+                        <br>
+                        음악이란 틀안에서 뭐 나는 곧
+                        <br><br>
+                        왕이야 nigga im good.  
+                        <br>
+                        두 손들고 경례 nigga salute.
+                        <br>
+                        무릎을 아래 위로 까딱. 몸을 틀어 pasta.
+                        <br>
+                        막상 들어보니 또 느려, shit.
+                        <br><br>
+                        근데 벌써 거리 많은 이들 cant reach. 
+                        <br>
+                        다 듣고 나면 사람들은 또 want it again.
+                        <br>
+                        친구들에게만 공개. This 마약뮤직. 
+                        <br>
+                        LIke 브레이킹 배드 또 모두 찾아 우릴
+                        <br>
+                        <br>
+                        hook)Jay
+                        <br>
+                        work it make it 탈출구는 오직 moving
+                        <br>
+                        circuit 우리는 hurry 느린듯, 하지만 faster
+                        <br>
+                        harder better 언제나 좋은음악 music
+                        <br>
+                        so sick, dope shit, fuck it in the end calling
+                        <br>
+                        <br>
+                        2)Kiroo
+                        <br>
+                        throw your hands in the motherfucking air
+                        <br>
+                        내 맘대로 적은게 귓속에 들려
+                        <br>
+                        시작은 반에 반 내 믹스테잎 2개도
+                        <br>
+                        별거없네 그냥 날 알리는 거야
+                        <br><br>
+                        난 트랩 싫어해 그래서 안하지
+                        <br>
+                        원래 클래식은 나처럼 유행을 안타지
+                        <br>
+                        그래 난 화려함이 없어 근대 다른애들과는 달리 여유가 넘쳐
+                        <br>
+                        취한듯 반쯤 풀린 눈 내 색깔을 너한테 입히지 swimming pool 
+                        <br><br>
+                        힘빼 붕뜨는 기분을 느껴 dope music 딱지를 붙혀
+                        <br>
+                        매일밤 취한듯한 기분 자연스런 리듬 
+                        <br>
+                        음악은 위대하네 모둘 움직이는 지금
+                        <br>
+                        고개만 까딱여도 돼
+                        <br>
+                        지금의 느낌을 니 몸에 기억해
+                        <br><br>
+                        brige)Lil_chumji aka 808사나이
+                        <br>
+                        every day young. 이건 마약 뮤직 for your birthday
+                        <br>
+                        매일매일 monday to sunday 빨간 색칠해 on my calender
+                        <br>
+                        this 마약뮤직
+                        <br>
+                        Monday Monday Tuesday Tuesday Wednesday Wednesday 살어 두배로 
+                        <br>
+                        Monday Monday Tuesday Tuesday Wednesday Wednesday 살어 두배로
+                        <br><br>
+                        hook)Jay
+                        <br>
+                        work it make it 탈출구는 오직 moving
+                        <br>
+                        circuit 우리는 hurry 느린듯, 하지만 faster
+                        <br>
+                        harder better 언제나 좋은음악 music
+                        <br>
+                        so sick, dope shit, fuck it in the end calling
+                     </div>
+                </div>
+            </div>
+        </div>
+    <div id="footer">
+        <img id="footerImg" src="../img/footer.jpg" alt="IMG" 
+        onclick='javaScript:location.href="../mibs.html";'>
+        <h6 id="footerText">Copyright ⓒ MIBSound. All rights reserved.</h3>
+    </div>
+</div>
+<script src="../js/login.js"></script>
+<script src="../js/comment.js"></script>
+</body>
+</html>
