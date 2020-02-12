@@ -14,4 +14,7 @@ MIBS의 음악들을 모아둔 사이트
 3. slider기능 연습
     간단한 slider 기능 구현
 
+4. github 접속URL :  https://kiroo90.github.io/MIBS-official/mibs.html
+
+
 모바일 CSS 적용X
