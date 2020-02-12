@@ -14,7 +14,11 @@ MIBS의 음악들을 모아둔 사이트
 3. slider기능 연습
     간단한 slider 기능 구현
 
-4. github 접속URL :  https://kiroo90.github.io/MIBS-official/mibs.html
+4. 간단한 comment in/out 기능 연습
+    음악을 듣는 곳에 각각의 comment가 적혀있는데 화살표 버튼으로 
+    접었다 필수있다.
+
+5. github 접속URL :  https://kiroo90.github.io/MIBS-official/mibs.html
 
 
 모바일 CSS 적용X
