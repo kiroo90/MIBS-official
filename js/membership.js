@@ -82,25 +82,20 @@ function checkValue(){
         alert("가입을 축하드립니다.");
         opener.location.href = 'mibs.html';
         window.close()
-    } else if(inputId && inputPass && inputRePass && inputName) {
-        textEmail.innerHTML = alertText
-    } else if(inputId && inputPass && inputRePass) {
-        textName.innerHTML = alertText;
-        textEmail.innerHTML = alertText
-    } else if(inputId && inputPass){
-        textRe.innerHTML = alertText;
-        textName.innerHTML = alertText;
-        textEmail.innerHTML = alertText;
-    } else if(inputId) {
-        textPass.innerHTML = alertText;
-        textRe.innerHTML = alertText;
-        textName.innerHTML = alertText;
-        textEmail.innerHTML = alertText;
-    } else if(!inputId && !inputPass && !inputName && !inputRePass && !inputEmail){
+    }
+    if(!inputId) {
         text.innerHTML = alertText;
+    }
+    if(!inputPass) {
         textPass.innerHTML = alertText;
+    }
+    if(!inputRePass){
         textRe.innerHTML = alertText;
+    }
+    if(!inputName) {
         textName.innerHTML = alertText;
+    }
+    if(!inputEmail){
         textEmail.innerHTML = alertText;
     }
 }
